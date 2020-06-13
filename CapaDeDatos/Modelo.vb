@@ -9,11 +9,11 @@ Public MustInherit Class Modelo
     Public DbHost As String = "localhost"
 
     Public Conexion As New OdbcConnection("DRIVER=" + Me.DbDriver +
-                                           ";UID=" + Me.DbUser +
-                                            ";PWD=" + Me.DbPassword +
-                                            ";PORT=" + Me.DbPort +
-                                            ";DATABASE=" + Me.DbName +
-                                            ";SERVER=" + Me.DbHost + "")
+                                          ";UID=" + Me.DbUser +
+                                          ";PWD=" + Me.DbPassword +
+                                          ";PORT=" + Me.DbPort +
+                                          ";DATABASE=" + Me.DbName +
+                                          ";SERVER=" + Me.DbHost + "")
     Public Comando As New OdbcCommand()
     Public Reader As OdbcDataReader
 

@@ -12,7 +12,7 @@
     End Function
 
     Public Sub Guardar()
-        Comando.CommandText = "INSERT INTO persona(id,nombre,apellido,mail) 
+        Comando.CommandText = "INSERT INTO persona 
                             VALUES (" + Me.Id + ",'" + Me.Nombre + "','" + Me.Apellido + "','" + Me.Mail + "')"
         Comando.ExecuteNonQuery()
     End Sub
