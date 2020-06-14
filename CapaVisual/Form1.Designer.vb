@@ -32,6 +32,9 @@ Partial Class Form1
         Me.Label3 = New System.Windows.Forms.Label()
         Me.txtApellido = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
+        Me.btnListar = New System.Windows.Forms.Button()
+        Me.ListaDePersonas = New System.Windows.Forms.DataGridView()
+        CType(Me.ListaDePersonas, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnContar
@@ -120,11 +123,30 @@ Partial Class Form1
         Me.Label4.TabIndex = 6
         Me.Label4.Text = "Apellido"
         '
+        'btnListar
+        '
+        Me.btnListar.Location = New System.Drawing.Point(177, 249)
+        Me.btnListar.Name = "btnListar"
+        Me.btnListar.Size = New System.Drawing.Size(75, 23)
+        Me.btnListar.TabIndex = 10
+        Me.btnListar.Text = "Listar"
+        Me.btnListar.UseVisualStyleBackColor = True
+        '
+        'ListaDePersonas
+        '
+        Me.ListaDePersonas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.ListaDePersonas.Location = New System.Drawing.Point(274, 12)
+        Me.ListaDePersonas.Name = "ListaDePersonas"
+        Me.ListaDePersonas.Size = New System.Drawing.Size(566, 274)
+        Me.ListaDePersonas.TabIndex = 11
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(285, 272)
+        Me.ClientSize = New System.Drawing.Size(852, 298)
+        Me.Controls.Add(Me.ListaDePersonas)
+        Me.Controls.Add(Me.btnListar)
         Me.Controls.Add(Me.txtMail)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.txtApellido)
@@ -138,6 +160,7 @@ Partial Class Form1
         Me.Name = "Form1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form1"
+        CType(Me.ListaDePersonas, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -153,4 +176,6 @@ Partial Class Form1
     Friend WithEvents Label3 As Label
     Friend WithEvents txtApellido As TextBox
     Friend WithEvents Label4 As Label
+    Friend WithEvents btnListar As Button
+    Friend WithEvents ListaDePersonas As DataGridView
 End Class

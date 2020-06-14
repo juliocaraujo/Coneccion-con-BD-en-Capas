@@ -17,4 +17,11 @@
         Comando.ExecuteNonQuery()
     End Sub
 
+    Public Function Listar()
+        Comando.CommandText = "SELECT * FROM persona"
+        Reader = Comando.ExecuteReader()
+
+        Return Reader
+    End Function
+
 End Class

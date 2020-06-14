@@ -15,6 +15,7 @@ Public MustInherit Class Modelo
                                           ";DATABASE=" + Me.DbName +
                                           ";SERVER=" + Me.DbHost + "")
     Public Comando As New OdbcCommand()
+
     Public Reader As OdbcDataReader
 
     Public Sub New()

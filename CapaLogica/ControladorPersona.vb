@@ -17,5 +17,10 @@ Public Module ControladorPersona
         p.Guardar()
 
     End Sub
+    Public Function ListarTodo()
+        Dim p As New ModeloPersona
+        Return p.Listar()
+
+    End Function
 
 End Module

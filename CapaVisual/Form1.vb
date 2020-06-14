@@ -18,4 +18,11 @@ Public Class Form1
 
 
     End Sub
+
+    Private Sub btnListar_Click(sender As Object, e As EventArgs) Handles btnListar.Click
+        Dim tabla As New DataTable
+        tabla.Load(ControladorPersona.ListarTodo())
+        ListaDePersonas.DataSource() = tabla
+
+    End Sub
 End Class
