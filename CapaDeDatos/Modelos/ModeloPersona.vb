@@ -24,4 +24,15 @@
         Return Reader
     End Function
 
+    Public Sub borrar()
+        Comando.CommandText = "DELETE FOR persona WHERE id = " + Me.Id
+        Comando.ExecuteNonQuery()
+    End Sub
+
+    Public Sub Modificar()
+        Comando.CommandText = "UPDATE persona SET nombre = '" + Me.Nombre + "', apellido = '" + Me.Apellido + "', mail = '" + Me.Mail + "' WHERE id = " + Me.Id
+        Comando.ExecuteNonQuery()
+
+    End Sub
+
 End Class

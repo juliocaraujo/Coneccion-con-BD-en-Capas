@@ -34,6 +34,8 @@ Partial Class Form1
         Me.Label4 = New System.Windows.Forms.Label()
         Me.btnListar = New System.Windows.Forms.Button()
         Me.ListaDePersonas = New System.Windows.Forms.DataGridView()
+        Me.btnBorrar = New System.Windows.Forms.Button()
+        Me.btnModificar = New System.Windows.Forms.Button()
         CType(Me.ListaDePersonas, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -137,14 +139,34 @@ Partial Class Form1
         Me.ListaDePersonas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.ListaDePersonas.Location = New System.Drawing.Point(274, 12)
         Me.ListaDePersonas.Name = "ListaDePersonas"
-        Me.ListaDePersonas.Size = New System.Drawing.Size(566, 274)
+        Me.ListaDePersonas.Size = New System.Drawing.Size(566, 318)
         Me.ListaDePersonas.TabIndex = 11
+        '
+        'btnBorrar
+        '
+        Me.btnBorrar.Location = New System.Drawing.Point(177, 278)
+        Me.btnBorrar.Name = "btnBorrar"
+        Me.btnBorrar.Size = New System.Drawing.Size(75, 23)
+        Me.btnBorrar.TabIndex = 12
+        Me.btnBorrar.Text = "Borrar"
+        Me.btnBorrar.UseVisualStyleBackColor = True
+        '
+        'btnModificar
+        '
+        Me.btnModificar.Location = New System.Drawing.Point(177, 307)
+        Me.btnModificar.Name = "btnModificar"
+        Me.btnModificar.Size = New System.Drawing.Size(75, 23)
+        Me.btnModificar.TabIndex = 13
+        Me.btnModificar.Text = "Modificar"
+        Me.btnModificar.UseVisualStyleBackColor = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(852, 298)
+        Me.ClientSize = New System.Drawing.Size(852, 343)
+        Me.Controls.Add(Me.btnModificar)
+        Me.Controls.Add(Me.btnBorrar)
         Me.Controls.Add(Me.ListaDePersonas)
         Me.Controls.Add(Me.btnListar)
         Me.Controls.Add(Me.txtMail)
@@ -178,4 +200,6 @@ Partial Class Form1
     Friend WithEvents Label4 As Label
     Friend WithEvents btnListar As Button
     Friend WithEvents ListaDePersonas As DataGridView
+    Friend WithEvents btnBorrar As Button
+    Friend WithEvents btnModificar As Button
 End Class
